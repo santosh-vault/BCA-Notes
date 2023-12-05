@@ -26,8 +26,9 @@
     background: rgba(0, 0, 0, 0.5);
   }
   
-
-
+.carousel-item{
+  position: relative;
+}
 /* CSS for styling the ProjectContainer component */
 .project-container {
     animation: fadeIn 1s ease-in-out;
@@ -188,28 +189,44 @@
     margin-bottom: 10px;
   }
   
-  .project-link {
-    background-color: #ccc; 
-    color: #000; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 5px;
-  }
-  
-  .project-link:hover {
-    background-color: #ccc; 
-    color: #000; 
-    text-decoration: none;
-  }
-  
+
   
   .project-card:hover {
     transform: scale(1.05);
   }
   
   
-  
+  /* Footer.css */
+.footer {
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 20px 0;
+  margin: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer p::before {
+  content: '|';
+  margin: 0 10px;
+}
+
+.footer p:first-child::before {
+  content: none;
+}
+
+.footer p:last-child {
+  margin-top: 10px; 
+}
+
+
   
   
   

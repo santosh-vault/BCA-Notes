@@ -1,22 +1,32 @@
-import React, { useState } from 'react';
-import aa from '../assets/aa.jpg';
+import React, { useState, useEffect } from 'react';
+import s from '../assets/s.jpg';
 
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % 3); 
+    setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
   };
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + 3) % 3); 
+    setActiveIndex((prevIndex) => (prevIndex - 1 + 3) % 3);
   };
+
+  useEffect(() => {
+    // Automatically slide to the next image every 4 seconds
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [activeIndex]); // Re-run effect when activeIndex changes
 
   return (
     <div id="hero" className="carousel slide rounded overflow-hidden" data-ride="carousel">
       <div className="carousel-inner">
         <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-          <img src={aa} className="d-block w-100 rounded" alt="Banner 1" />
+          <img src={s} className="d-block w-100 rounded" alt="Banner 1" />
         </div>
         <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
           <img
@@ -26,7 +36,12 @@ const HeroSection = () => {
           />
         </div>
         <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-          <img src="https://example.com/banner3.jpg" className="d-block w-100 rounded" alt="Banner 3" />
+          <img
+            src="https://example.com/banner3.jpg"
+            className="d-block w-100 rounded"
+            alt="Banner 3"
+            style={{ objectPosition: '50% 50%', height: '300px', transition: 'transform 1s ease-in-out' }}
+          />
         </div>
       </div>
       <a className="carousel-control-prev" href="#hero" role="button" data-slide="prev" onClick={handlePrev}>

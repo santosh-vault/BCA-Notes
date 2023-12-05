@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.3)" }}>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light " style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.3)" }}>
       <div className="container text-center">
 
         <button
