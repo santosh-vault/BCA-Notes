@@ -232,4 +232,104 @@
   
   
   
-  
+  /* styles.css (or your preferred stylesheet) */
+
+.semester-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  /* Additional styling, you can customize this further */
+  background-color: #fff;
+  text-align: center;
+  margin: 16px;
+}
+
+.semester-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.semester-card h3 {
+  color: #333;
+}
+
+.semester-card p {
+  color: #666;
+}
+
+.semester-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.semester-card a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+
+/* Add this to your CSS file or use inline styles */
+
+.syllabus-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+/* Add this to your CSS file or use inline styles */
+
+.syllabus-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.syllabus-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.syllabus-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Add more styles as needed */
+

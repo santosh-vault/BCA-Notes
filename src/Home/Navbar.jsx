@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isNavbarCollapsed, setNavbarCollapsed] = useState(true);
@@ -21,20 +23,22 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${isNavbarCollapsed ? '' : 'show'}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="/notes">
+            
+          <li className="nav-item">
+              <Link to="/notepage" className="nav-link">
                 Notes
-              </a>
+              </Link>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="/question-papers">
+              <Link to="/question-papers" className="nav-link">
                 Question Papers
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/syllabus">
+              <Link to="/syllabus" className="nav-link">
                 Syllabus
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
