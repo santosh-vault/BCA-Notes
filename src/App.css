@@ -1,34 +1,68 @@
 /* HeroSection.css */
 #hero {
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0.8, 0.8, 0.8, 0.8);
+  overflow: hidden; /* Hide the overflowing content */
+}
 
-  }
-  
-  .carousel {
-    margin: auto;
-  }
-  
-  .carousel-inner {
-    height: 500px; 
-    overflow: hidden;
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-.carousel-item{
+.carousel {
+  margin: auto;
+  overflow: hidden; /* Hide the overflowing content */
   position: relative;
 }
+
+.carousel-inner {
+  display: flex; /* Set display to flex to allow horizontal arrangement */
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect for the transform property */
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out; /* Add the same transition effect to the images */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon {
+  left: 10px;
+}
+
+.carousel-control-next-icon {
+  right: 10px;
+}
+
+.carousel-item {
+  min-width: 100%; /* Ensure each slide takes up the full width of the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Add a class for sliding animation */
+.slide {
+  transform: translateX(0); /* Start with no translation */
+}
+
+/* Add a class for sliding animation to the active slide */
+.slide.active {
+  transform: translateX(-100%); /* Translate the active slide to the left by 100% of its width */
+}
+
+.carousel-fade {
+  transition: opacity 0.5s ease-in-out; /* Add a smooth transition effect for the opacity property */
+}
+
+
 /* CSS for styling the ProjectContainer component */
 .project-container {
     animation: fadeIn 1s ease-in-out;
@@ -37,7 +71,7 @@
     padding: 60px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff; 
-    color: #000; 
+    color: #1B262C; 
     background-size: cover;
     background-position: center;
   }
@@ -112,7 +146,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 80px;
-    color: #25024f;
+    color: #1B262C;
     transition: background-color 0.3s ease;
   }
   
@@ -134,7 +168,9 @@
     scroll-behavior: smooth;
   }
   
-  
+  .navbar{
+    --bs-navbar-padding-y: 0rem;
+  }
   
   
   
@@ -153,7 +189,7 @@
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    color: #000; 
+    color: #1B262C; 
   
     width: 400px;
   
@@ -179,13 +215,13 @@
   
   .project-description {
     font-size: 16px;
-   color: #000;  /* Adjust text color as needed */
+   color: #1B262C;  /* Adjust text color as needed */
     margin-bottom: 10px;
   }
   
   .project-technologies {
     font-size: 14px;
-    color: #000; /* Adjust text color as needed */
+    color: #1B262C; /* Adjust text color as needed */
     margin-bottom: 10px;
   }
   
@@ -199,7 +235,7 @@
   /* Footer.css */
 .footer {
   background-color: #eeeeee;
-  color: #000000;
+  color: #1B262C;
   padding: 20px 0;
   margin: 10px;
 }
@@ -264,7 +300,7 @@
   display: inline-block;
   margin-top: 12px;
   padding: 8px 16px;
-  background-color: #000000;
+  background-color: #1B262C;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -273,7 +309,7 @@
 
 .semester-card a:hover {
   background-color: #ffffff;
-  color: #000000;
+  color: #1B262C;
 }
 
 

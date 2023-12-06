@@ -75,6 +75,9 @@ export const SyllabusProvider = ({ children }) => {
             { courseCode: 'CACS401', courseTitle: 'Cyber Law and Professional Ethics', creditHours: 3 },
             { courseCode: 'CACS402', courseTitle: 'Cloud Computing', creditHours: 3 },
             { courseCode: 'CAIN403', courseTitle: 'Internship', creditHours: 3 },
+            { courseCode: 'N/A', courseTitle: 'Elective I', creditHours: 3 },
+            { courseCode: 'N/A', courseTitle: 'Elective II', creditHours: 3 },
+            
            
           ],
         },
@@ -83,6 +86,8 @@ export const SyllabusProvider = ({ children }) => {
           courses: [
             { courseCode: 'CAOR451', courseTitle: 'Operations Research', creditHours: 3 },
             { courseCode: 'CAPJ452', courseTitle: 'Project III', creditHours: 6 },
+            { courseCode: 'N/A', courseTitle: 'Elective III', creditHours: 3 },
+            { courseCode: 'N/A', courseTitle: 'Elective IV', creditHours: 3 },
           
           ],
         },

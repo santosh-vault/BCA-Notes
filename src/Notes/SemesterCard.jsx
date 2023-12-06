@@ -1,11 +1,11 @@
 // SemesterCard.jsx
 import React from 'react';
 
-const SemesterCard = ({ semesterNumber, link }) => {
+const SemesterCard = ({ semesterNumber, link, description}) => {
   return (
     <div className="semester-card">
       <h3>Semester {semesterNumber}</h3>
-      <p>Click below to visit the website:</p>
+      <p>{description}</p>
       <a href={link} target="_blank" rel="noopener noreferrer">
         Visit
       </a>
