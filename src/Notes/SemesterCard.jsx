@@ -1,14 +1,16 @@
 // SemesterCard.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NotesPage from './NotePage';
 
-const SemesterCard = ({ semesterNumber, link, description}) => {
+const SemesterCard = ({ semesterNumber, link, description }) => {
   return (
     <div className="semester-card">
       <h3>Semester {semesterNumber}</h3>
       <p>{description}</p>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <Link to={link}>
         Visit
-      </a>
+      </Link>
     </div>
   );
 };

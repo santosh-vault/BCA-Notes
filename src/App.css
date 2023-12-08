@@ -1,10 +1,30 @@
 /* HeroSection.css */
 #hero {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-top: 40px;
-  box-shadow: 0 4px 8px rgba(0.8, 0.8, 0.8, 0.8);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
   overflow: hidden; /* Hide the overflowing content */
+  position: relative; /* Add position relative to position absolute child elements */
+}
+
+/* Add background color to the sides */
+#hero::before,
+#hero::after {
+  content: '';
+
+  top: 0;
+  bottom: 0;
+
+  background-color: #f1f1f1; /* Set the background color */
+}
+
+#hero::before {
+  left: 0;
+}
+
+#hero::after {
+  right: 0;
 }
 
 .carousel {
@@ -70,7 +90,7 @@
     overflow: hidden;
     padding: 60px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; 
+
     color: #1B262C; 
     background-size: cover;
     background-position: center;
@@ -367,5 +387,22 @@ th {
   gap: 20px;
 }
 
-/* Add more styles as needed */
+/* accordion.css */
+.accordion {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
 
