@@ -65,21 +65,20 @@
 
 .carousel-item {
   min-width: 100%; /* Ensure each slide takes up the full width of the container */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box; 
 }
 
 /* Add a class for sliding animation */
 .slide {
-  transform: translateX(0); /* Start with no translation */
+  transform: translateX(0); 
 }
 
 /* Add a class for sliding animation to the active slide */
 .slide.active {
-  transform: translateX(-100%); /* Translate the active slide to the left by 100% of its width */
+  transform: translateX(-100%); 
 }
-
 .carousel-fade {
-  transition: opacity 0.5s ease-in-out; /* Add a smooth transition effect for the opacity property */
+  transition: opacity 0.5s ease-in-out; 
 }
 
 
@@ -135,7 +134,6 @@
     background-color: transparent;
   }
   
-  /* Ensure the container takes up the full width on smaller screens */
   @media screen and (max-width: 768px) {
     .project-container {
       flex-direction: column;
@@ -213,7 +211,7 @@
   
     width: 400px;
   
-    /* Ensure the card takes up the full width on smaller screens */
+  
     @media screen and (max-width: 768px) {
       width: 100%;
     }
@@ -222,7 +220,7 @@
   
   .project-content {
     position: relative;
-    z-index: 1; /* Ensure the content is on top of the background card */
+    z-index: 1; 
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     padding: 20px;
@@ -235,7 +233,7 @@
   
   .project-description {
     font-size: 16px;
-   color: #1B262C;  /* Adjust text color as needed */
+   color: #1B262C;
     margin-bottom: 10px;
   }
   
@@ -288,7 +286,6 @@
   
   
   
-  /* styles.css (or your preferred stylesheet) */
 
 .semester-card {
   border: 1px solid #ddd;
@@ -297,7 +294,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 
-  /* Additional styling, you can customize this further */
+
   background-color: #fff;
   text-align: center;
   margin: 16px;
@@ -335,7 +332,7 @@
 
 
 
-/* Add this to your CSS file or use inline styles */
+
 
 .syllabus-card {
   margin-bottom: 20px;
@@ -367,7 +364,6 @@ th {
 
 
 
-/* Add this to your CSS file or use inline styles */
 
 .syllabus-container {
   max-width: 800px;
@@ -405,4 +401,57 @@ th {
   padding: 10px;
 }
 
+
+
+.iframe-container {
+  font-family: 'Arial, sans-serif';
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+
+  background-color: #c4c4c4; 
+  color: #202020; 
+}
+
+.nested-accordion {
+  background-color: #cdcdcd; 
+  color: #202020;
+}
+
+.iframe-content {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+
+
+
+
+
+
+/* NotesPage.css */
+
+.semester-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.semester-card {
+
+  width: 350px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 

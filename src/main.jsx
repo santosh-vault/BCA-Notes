@@ -7,8 +7,8 @@ import NotePage from './Notes/NotePage.jsx';
 import Syllabus from './Syllabus/Syllabus.jsx';
 import { SyllabusProvider } from './store/syllabus-list.jsx';
 import Cf from './Notes/sem1/Cf.jsx';
-import DigitalLogic from './Notes/sem1/DigitalLogic.jsx';
-
+import Iind from './Notes/sem1/Iind.jsx';
+import Iiird from './Notes/sem1/Iiird.jsx';
 
 
 const routes = [
@@ -16,8 +16,10 @@ const routes = [
   { path: '/', element: <App /> },
   { path: '/notepage', element: <NotePage /> },
   { path: '/syllabus', element: <Syllabus /> },
-  { path: '/cf', element: <Cf /> },
-  { path: '/digitallogic', element: <DigitalLogic /> },
+  { path: '/i', element: <Cf /> },
+  { path: '/ii', element: <Iind /> },
+  { path: '/iii', element: <Iiird /> },
+
 
 
 ];
