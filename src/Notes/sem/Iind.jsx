@@ -1,6 +1,7 @@
 import React from 'react'
 import Accordion from '../Accordion'
 import Layout from '../../Layout';
+import Bar from '../Bar';
 
 const Iind = () => {
 
@@ -21,7 +22,10 @@ const Iind = () => {
     };
 
     return (
+        <div className="app-container">
         <Layout>
+            <Bar />
+            <h3 style={{textAlign:'center', fontWeight:'bold', margin:'20px'}}>Second Semester</h3>
             <div style={containerStyle}>
                 <Accordion title="Account">
                     <Accordion title="Handwritten Notes" className="nested-accordion" style={{ marginBottom: '10px' }}>
@@ -138,6 +142,7 @@ const Iind = () => {
                 </Accordion>
             </div>
         </Layout>
+        </div>
     )
 }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Home/Header';
 import Navbar from './Home/Navbar';
@@ -9,15 +9,14 @@ import Footer from './Home/Footer';
 
 const App = () => {
   return (
-    <>
-    
+    <div className="app-container">
       <Header />
       <Navbar />
       <HeroSection />
       <Feature />
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Accordion from '../Accordion'
 import Layout from '../../Layout'
+import Bar from '../Bar';
 
 const Iiird = () => {
 
@@ -21,7 +22,10 @@ const Iiird = () => {
     };
 
     return (
+        <div className="app-container">
         <Layout>
+            <Bar />
+            <h3 style={{textAlign:'center', fontWeight:'bold', margin:'20px'}}>Third Semester</h3>
             <div style={containerStyle}>
                 <Accordion title="Web technology">
                     <Accordion title="Pdfs" className="nested-accordion" style={{ marginBottom: '10px' }}>
@@ -119,6 +123,7 @@ const Iiird = () => {
 
             </div>
         </Layout>
+        </div>
     )
 }
 

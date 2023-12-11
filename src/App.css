@@ -1,84 +1,56 @@
+/* App.css */
+
+.app-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 /* HeroSection.css */
+
 #hero {
   width: 70%;
   margin: auto;
   margin-top: 40px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
-  overflow: hidden; /* Hide the overflowing content */
-  position: relative; /* Add position relative to position absolute child elements */
-}
-
-/* Add background color to the sides */
-#hero::before,
-#hero::after {
-  content: '';
-
-  top: 0;
-  bottom: 0;
-
-  background-color: #f1f1f1; /* Set the background color */
-}
-
-#hero::before {
-  left: 0;
-}
-
-#hero::after {
-  right: 0;
-}
-
-.carousel {
-  margin: auto;
-  overflow: hidden; /* Hide the overflowing content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 
 .carousel-inner {
-  display: flex; /* Set display to flex to allow horizontal arrangement */
-  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect for the transform property */
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-  transition: transform 0.5s ease-in-out; /* Add the same transition effect to the images */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.carousel-control-prev-icon {
-  left: 10px;
-}
-
-.carousel-control-next-icon {
-  right: 10px;
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .carousel-item {
-  min-width: 100%; /* Ensure each slide takes up the full width of the container */
-  box-sizing: border-box; 
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Add a class for sliding animation */
-.slide {
-  transform: translateX(0); 
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-/* Add a class for sliding animation to the active slide */
-.slide.active {
-  transform: translateX(-100%); 
+.carousel-item.active {
+  transform: translateX(0);
 }
-.carousel-fade {
-  transition: opacity 0.5s ease-in-out; 
+
+.carousel-item.next {
+  transform: translateX(100%);
 }
 
 
@@ -189,7 +161,9 @@
   .navbar{
     --bs-navbar-padding-y: 0rem;
   }
-  
+  .navbar-toggler-icon{
+    width: 18.5em;
+  }
   
   
   /* CSS for styling the ProjectCard component */
@@ -453,5 +427,63 @@ th {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+/* NavigationBar.css */
+.bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.bar a {
+  color: #272727;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bar a:hover {
+  background-color: #ccc;
+
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  #hero {
+    width: 90%; /* Adjust as needed */
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Adjust padding based on design */
+  }
+
+  .project-cards {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .project-card {
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  .project-container h1 {
+    font-size: 1.5rem; /* Adjust font size based on design */
+    margin: 1rem 0;
+  }
+
+  .project-title {
+    font-size: 1.25rem; /* Adjust font size based on design */
+  }
+
+  .project-description {
+    font-size: 1rem; /* Adjust font size based on design */
+  }
 }
 

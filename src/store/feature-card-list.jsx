@@ -5,35 +5,38 @@ const ProjectContext = createContext();
 const ProjectProvider = ({ children }) => {
   const [projects, setProjects] = useState({
     frontend: [
-        {
-          title: 'BCA 1st Sem',
-          description: "Comprehensive collection of BCA 1st semester notes covering subjects such as Computer Fundamentals & Applications, Society and Technology, Mathematics I, English I, and Digital Logic providing essential study material for TU BCA program",
-          technologies: 'BCA, 1st, Notes',
-          imageUrl: 'https://repository-images.githubusercontent.com/289382429/e9c6ec80-8902-11eb-9f55-5de819da8bf5',
-          projectLink: 'https://drive.google.com/drive/u/2/folders/1SMC2OwDkcHq71sD0bXn5rdYNWFORLu2W',
-        },
-        {
-          title: 'BCA 1st Sem Old Questions',
-          description: 'BCA 1st semester preparation with essential old question papers, aiding in effective exam revision and mastery of key subjects. Access and download the BCA 1st sem old questions for a successful academic performance.',
-          technologies: 'BCA, 1st, Question Paper',
-          imageUrl: "",
-          projectLink: 'https://example.com/frontend-project1',
-        },
-        {
-          title: 'BCA 2nd Sem',
-          description: "Comprehensive collection of BCA 1st semester notes covering subjects such as Computer Fundamentals & Applications, Society and Technology, Mathematics I, English I, and Digital Logic providing essential study material for TU BCA program",
-          technologies: 'BCA, 2nd, Notes',
-          imageUrl: 'https://repository-images.githubusercontent.com/289382429/e9c6ec80-8902-11eb-9f55-5de819da8bf5',
-          projectLink: 'https://drive.google.com/drive/u/2/folders/1SMC2OwDkcHq71sD0bXn5rdYNWFORLu2W',
-        },
-        {
-          title: 'BCA2nd Sem Old Questions',
-          description: 'BCA 2nd semester preparation with essential old question papers, aiding in effective exam revision and mastery of key subjects. Access and download the BCA 1st sem old questions for a successful academic performance.',
-          technologies: 'BCA, 2nd, Question Paper',
-          imageUrl: "",
-          projectLink: 'https://example.com/frontend-project1',
-        },
-      ],
+      {
+        title: 'BCA 1st Sem ',
+        projectLink: "/i",
+        technologies: 'BCA, 1st, Notes',
+        description: "Comprehensive collection of BCA 1st semester notes covering subjects such as Computer Fundamentals & Applications, Society and Technology, Mathematics I, English I, and Digital Logic providing essential study material for TU BCA program"
+      },
+      {
+        title: 'BCA 2nd Sem ',
+        projectLink: "/ii",
+        technologies: 'BCA, 2nd, Notes',
+        description: "Comprehensive BCA 2nd semester notes covering subjects like Financial Accounting, C Programming,English II, and Mathematics II, providing essential study material for TU BCA students in Nepal."
+      },
+      {
+        title: 'BCA 3rd Sem ',
+        projectLink: "/iii",
+        technologies: 'BCA, 3rd, Notes',
+        description: "Elevate your BCA 3rd semester studies with meticulously crafted notes covering Java Programming, Data Structures, and System Analysis, designed for TU BCA students in Nepal for enhanced academic performance."
+      },
+      {
+        title: 'BCA 4th Sem ',
+        projectLink: "/iv",
+        technologies: 'BCA, 3rd, Notes',
+        description: "Boost your BCA 4th semester studies with comprehensive notes covering Operating Systems, Database Management Systems, and Software Engineering, tailored for TU BCA students in Nepal to excel in academic performance."
+      },
+      {
+        title: 'BCA 4th Sem ',
+        projectLink: "/iv",
+        technologies: 'BCA, 3rd, Notes',
+        description: "Boost your BCA 4th semester studies with comprehensive notes covering Operating Systems, Database Management Systems, and Software Engineering, tailored for TU BCA students in Nepal to excel in academic performance."
+      },
+    
+    ],
   });
 
   const [activeCard, setActiveCard] = useState(0);

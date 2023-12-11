@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from '../Accordion';
 import Layout from '../../Layout';
+import Bar from '../Bar';
 
 const Iframe = () => {
   const containerStyle = {
@@ -20,7 +21,10 @@ const Iframe = () => {
   };
 
   return (
+    <div className="app-container">
     <Layout>
+        <Bar />
+        <h3 style={{textAlign:'center', fontWeight:'bold', margin:'20px'}}>First Semester</h3>
       <div style={containerStyle}>
         {/* Main Accordion */}
         <Accordion title="Computer Fundamental">
@@ -170,6 +174,7 @@ const Iframe = () => {
         </Accordion>
       </div>
     </Layout>
+    </div>
   );
 };
 

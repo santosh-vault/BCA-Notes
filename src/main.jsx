@@ -6,9 +6,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import NotePage from './Notes/NotePage.jsx';
 import Syllabus from './Syllabus/Syllabus.jsx';
 import { SyllabusProvider } from './store/syllabus-list.jsx';
-import Cf from './Notes/sem1/Cf.jsx';
-import Iind from './Notes/sem1/Iind.jsx';
-import Iiird from './Notes/sem1/Iiird.jsx';
+import Cf from './Notes/sem/Cf.jsx';
+import Iind from './Notes/sem/Iind.jsx';
+import Iiird from './Notes/sem/Iiird.jsx';
+import IVth from './Notes/sem/Ivth.jsx';
 
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { path: '/i', element: <Cf /> },
   { path: '/ii', element: <Iind /> },
   { path: '/iii', element: <Iiird /> },
+  { path: '/iv', element: <IVth /> },
 
 
 

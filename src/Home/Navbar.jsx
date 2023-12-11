@@ -21,7 +21,21 @@ const Navbar = () => {
           type="button"
           onClick={toggleNavbar}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span
+  className="navbar-toggler-icon"
+  style={{
+    display: 'inline-block',
+    width: '15em',
+    height: '1.5em',
+    verticalAlign: 'middle',
+    fontSize: '0.8',
+    textAlign: 'center',
+    backgroundImage:'none',
+  }}
+>
+  &#124; &#124; &#124; Menu &#124; &#124; &#124;
+</span>
+
         </button>
 
         <div className={`collapse navbar-collapse ${isNavbarCollapsed ? '' : 'show'}`} id="navbarNav">

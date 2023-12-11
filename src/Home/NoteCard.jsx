@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NotesPage from '../Notes/NotePage';
 
-const NoteCard = ({ title, description, technologies, imageUrl, projectLink }) => {
+const NoteCard = ({ title, description, technologies, projectLink }) => {
   return (
     <div className="project-card">
       <div className="project-content">
@@ -12,7 +14,7 @@ const NoteCard = ({ title, description, technologies, imageUrl, projectLink }) =
             className="btn"
             style={{ marginTop: '10px', backgroundColor: '#000', color:'wheat', borderRadius:'4px'  }}
           >
-            Open Link
+           Visit
           </button>
         </a>
       </div>
