@@ -10,12 +10,14 @@ import Cf from './Notes/sem/Cf.jsx';
 import Iind from './Notes/sem/Iind.jsx';
 import Iiird from './Notes/sem/Iiird.jsx';
 import IVth from './Notes/sem/Ivth.jsx';
+import Qns from './Notes/Qns/Qns.jsx';
 
 
 const routes = [
 
   { path: '/', element: <App /> },
   { path: '/notepage', element: <NotePage /> },
+  { path: '/question-papers', element: <Qns /> },
   { path: '/syllabus', element: <Syllabus /> },
   { path: '/i', element: <Cf /> },
   { path: '/ii', element: <Iind /> },
