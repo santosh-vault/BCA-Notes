@@ -26,7 +26,7 @@ const Qns = () => {
             <Helmet>
                 <title>BCA Question Papers - Previous Year Exams for Exam Preparation</title>
                 <meta name="description" content="Explore a collection of BCA Question Papers to enhance your exam preparation. Access previous year exam papers for various semesters, including detailed solutions. Elevate your understanding of exam patterns and key concepts with BCA Notes Nepal's comprehensive question paper repository." />
-                <meta name="keywords" content="BCA question papers, exam preparation, previous year exams, BCA exam papers, BCA model papers, BCA solved papers, Tribhuvan University, BCA semester exams, practice exams, BCA exam patterns, BCA test papers, exam solutions, study resources, BCA study materials, BCA exam guidance, online exam papers, BCA sample papers, mock exams, BCA exam resources, exam strategies, BCA past papers." />
+                <meta name="keyword" content="BCA question papers, exam preparation, previous year exams, BCA exam papers, BCA model papers, BCA solved papers, Tribhuvan University, BCA semester exams, practice exams, BCA exam patterns, BCA test papers, exam solutions, study resources, BCA study materials, BCA exam guidance, online exam papers, BCA sample papers, mock exams, BCA exam resources, exam strategies, BCA past papers." />
             </Helmet>
             <div className="app-container">
                 <Layout>

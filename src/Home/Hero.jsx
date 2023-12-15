@@ -19,15 +19,15 @@ const HeroSection = () => {
     <div id="hero" className="carousel slide rounded overflow-hidden" data-ride="carousel">
       <div className="carousel-inner">
         <div className={`carousel-item animate__animated ${activeIndex === 0 ? 'active' : 'next'} animate__fadeInLeft`}>
-          <img src={model} loading='lazy' className="d-block w-100 rounded" alt="Banner 1" />
+          <img src={model} loading='lazy' className="d-block w-100 rounded" alt="BCA notes important notice to all students from nepal." />
         </div>
 
         <div className={`carousel-item animate__animated ${activeIndex === 1 ? 'active' : 'next'} animate__fadeInLeft`}>
-          <img src={ad} loading='lazy' className="d-block w-100 rounded" alt="Banner 2" />
+          <img src={ad} loading='lazy' className="d-block w-100 rounded" alt="BCA notes important notice to all students from nepal." />
         </div>
 
         <div className={`carousel-item animate__animated ${activeIndex === 2 ? 'active' : 'next'} animate__fadeInLeft`}>
-          <img src={s} loading='lazy' className="d-block w-100 rounded" alt="Banner 3" />
+          <img src={s} loading='lazy' className="d-block w-100 rounded" alt="BCA notes important notice to all students from nepal." />
         </div>
       </div>
     </div>

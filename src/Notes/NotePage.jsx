@@ -21,7 +21,7 @@ const NotesPage = () => {
      <Helmet>
         <title>BCA Notes - Explore Semester-wise Study Materials</title>
         <meta name="description" content="Browse our extensive BCA Notes Library to access study materials for different semesters. Explore comprehensive notes covering BCA syllabus, computer applications, system security, and more. Elevate your learning experience with organized and detailed notes for every semester at BCA Notes Nepal." />
-        <meta name="keywords" content="BCA notes library, semester-wise study materials, BCA syllabus, computer applications, system security, BCA semester notes, BCA 1st semester, BCA 2nd semester, BCA 3rd semester, BCA 4th semester, BCA 5th semester, BCA 6th semester, BCA 7th semester, BCA 8th semester, BCA study resources, BCA exam preparation, Tribhuvan University, BCA course materials, BCA curriculum, study guides, online study materials, BCA learning resources." />
+        <meta name="keyword" content="BCA notes library, semester-wise study materials, BCA syllabus, computer applications, system security, BCA semester notes, BCA 1st semester, BCA 2nd semester, BCA 3rd semester, BCA 4th semester, BCA 5th semester, BCA 6th semester, BCA 7th semester, BCA 8th semester, BCA study resources, BCA exam preparation, Tribhuvan University, BCA course materials, BCA curriculum, study guides, online study materials, BCA learning resources." />
       </Helmet>
     <div className="app-container">
       <Layout>

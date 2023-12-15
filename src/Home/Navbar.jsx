@@ -33,7 +33,7 @@ const Navbar = () => {
     backgroundImage:'none',
   }}
 >
-  &#124; &#124; &#124; Menu &#124; &#124; &#124;
+  &#124; &#124; &#124; &#124;
 </span>
 
         </button>

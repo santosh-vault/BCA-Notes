@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.jpg'
+import logi from '../assets/logi.png'
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container text-center">
         <Link to="/">
           <img
-            src={logo}
+            src={logi}
             alt="Study Theme Logo"
             className="img-fluid"
             style={{ maxWidth: "100px" }}
