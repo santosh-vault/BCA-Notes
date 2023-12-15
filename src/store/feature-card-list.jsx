@@ -18,17 +18,18 @@ const ProjectProvider = ({ children }) => {
         description: "Comprehensive BCA 2nd semester notes covering subjects like Financial Accounting, C Programming,English II, and Mathematics II, providing essential study material for TU BCA students in Nepal."
       },
       {
+        title: 'Old Questions ',
+        projectLink: "/question-papers",
+        technologies: 'BCA, Qn, Old Questions',
+        description: "Boost your BCA studies with comprehensive Question Papers covering All semester Old question papers tailored for TU BCA students in Nepal to excel in academic performance."
+      },
+      {
         title: 'BCA 3rd Sem ',
         projectLink: "/iii",
         technologies: 'BCA, 3rd, Notes',
         description: "Elevate your BCA 3rd semester studies with meticulously crafted notes covering Java Programming, Data Structures, and System Analysis, designed for TU BCA students in Nepal for enhanced academic performance."
       },
-      {
-        title: 'BCA 4th Sem ',
-        projectLink: "/iv",
-        technologies: 'BCA, 3rd, Notes',
-        description: "Boost your BCA 4th semester studies with comprehensive notes covering Operating Systems, Database Management Systems, and Software Engineering, tailored for TU BCA students in Nepal to excel in academic performance."
-      },
+     
       {
         title: 'BCA 4th Sem ',
         projectLink: "/iv",
